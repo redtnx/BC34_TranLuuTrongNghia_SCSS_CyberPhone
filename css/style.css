@@ -1,0 +1,65 @@
+* {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.header {
+  background-color: #f5f9fe;
+  box-shadow: 0 2px 4px #e2ebfc;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.header .phoneNav .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2a73dd;
+}
+.header .phoneNav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1d365e;
+  padding: 1.8rem !important;
+}
+.header .phoneNav .nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #2a73dd;
+  transform: scaleX(0);
+  transition-duration: 0.2s;
+}
+.header .phoneNav .nav-link:hover {
+  color: #2a73dd;
+}
+.header .phoneNav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+.header .phoneNav .active .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2196f3;
+}
+.header .phoneNav .active .nav-link::after {
+  transform: scaleX(1);
+}
+
+#carousel {
+  padding-top: 225px;
+  background-image: url(/img/product-header-bg.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+#carousel .row .left h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #2a73dd;
+}
+#carousel .row .left p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #656774;
+  padding-top: 20px;
+}/*# sourceMappingURL=style.css.map */
